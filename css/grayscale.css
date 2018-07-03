@@ -282,11 +282,8 @@ img::-moz-selection {
   background: transparent;
 }
 
-#skills-list {
-  list-style-type: none;
-}
-
 #profile {
   width: 100%;
 }
+
 
