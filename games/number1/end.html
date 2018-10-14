@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Number Game 1</title>
+    <link rel="stylesheet" href="styles.css">
+    <script>
+            function writeAnswer() {
+                var pageURL = window.location.href;
+                var url = new URL(pageURL);
+                var answer = url.searchParams.get("answer");
+                document.getElementById("answer").innerHTML = answer;
+            }
+    </script>
+</head>
+
+<body onload="writeAnswer()">
+    <ul class="nav">
+        <li class="nav-item"><a class="active" href="index.html">HOME</a></li>
+        <li class="nav-item"><a href="step1.html">PLAY</a></li>
+        <li class="nav-item"><a href="#contact">INSTRUCTIONS</a></li>
+        <li class="nav-item"><a href="#about">ABOUT</a></li>
+    </ul>
+    <br>
+    <div>
+        <h2>The number you had selected is: <span id='answer'></span>.</h2>
+    </div>
+    <br>
+    <div id='play-container'>
+            <a href="step2.html" id="play-button">Play Again</a>
+    </div>
+
+</body>
+
+</html>
